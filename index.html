@@ -7,7 +7,60 @@
 	<meta name="description"
 		content="Nina Carducci, photographe professionnelle à Bordeaux, propose des shootings photo, des services de retouche d'images et la création d'albums photo personnalisés. Capturez et sublimez vos moments précieux avec une approche artistique unique." />
 	<meta name="language" content="fr-FR">
-	<title>Nina Carducci - photograhe à Bordeaux</title>
+	<title>Nina Carducci - photographe à Bordeaux</title>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "Nina Carducci",
+			"image": "./assets/images/nina.webp",
+			"priceRange": "€50 - €400",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "FR"
+			},
+			"telephone": "+33 5 56 67 78 89",
+			"email": "nina@gmail.com",
+			"url": "https://ninacarducci.github.io/",
+			"offers": [
+			  {
+				"@type": "Offer",
+				"name": "Shooting photo",
+				"description": "Shooting photo professionnel à Bordeaux",
+				"price": "350",
+				"priceCurrency": "EUR",
+				"eligibleDuration": {
+				  "@type": "QuantitativeValue",
+				  "value": "0.5",
+				  "unitCode": "DAY"
+				}
+			  },
+			  {
+				"@type": "Offer",
+				"name": "Retouches photo",
+				"description": "Retouches professionnelles pour vos photos",
+				"price": "50",
+				"priceCurrency": "EUR",
+				"priceUnit": "PerPhoto"
+			  },
+			  {
+				"@type": "Offer",
+				"name": "Album photo personnalisé",
+				"description": "Création d'un album photo A4 personnalisé",
+				"price": "400",
+				"priceCurrency": "EUR",
+				"eligibleQuantity": {
+				  "@type": "QuantitativeValue",
+				  "value": "1",
+				  "unitCode": "EA"
+				}
+			  }
+			]
+		  }  
+		</script>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -209,7 +262,7 @@
 	</section>
 	<footer>
 		<p>68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
-		<p>Tel : 05 56 67 78 89</p>
+		<p>Tel: 05 56 67 78 89</p>
 		<p>Joignable du lundi au vendredi de 10h à 19h</p>
 	</footer>
 </body>
