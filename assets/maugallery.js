@@ -114,9 +114,10 @@
       }
     },
     openLightBox(element, lightboxId) {
+      const lightboxSrc = element.data('lightbox-src') || element.attr('src');
       $(`#${lightboxId}`)
         .find(".lightboxImage")
-        .attr("src", element.attr("src"));
+        .attr("src", lightboxSrc);
       $(`#${lightboxId}`).modal("toggle");
     },
     prevImage() {
